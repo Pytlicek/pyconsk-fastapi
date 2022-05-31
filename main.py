@@ -69,7 +69,7 @@ async def update_item(
 
 
 items = {
-    "1": {"name": "Foo", "price": 50.2},
+    "1": {"name": "Foo", "price": 50.2, "description": "Fooooooo"},
     "2": {
         "name": "Bar",
         "description": "The Bar fighters",
@@ -97,12 +97,11 @@ async def read_item_name(item_id: str):
     ## Aj tu
     [Link text Here](https://link-url-here.org)
     """
-    if item_id not in items:
-        empty_item = {
-            "name": "string",
-            "description": "string",
-            "price": 0,
-            "tax": 0,
-        }
-        return items.get("item_id", empty_item)
-    return items["item_id"]
+    # if item_id not in items:
+    #     return {
+    #         "name": "string",
+    #         "description": "string",
+    #         "price": 0,
+    #         "tax": 0,
+    #     }
+    return items[item_id]
