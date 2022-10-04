@@ -24,7 +24,7 @@ app = FastAPI(
     openapi_tags=tags_metadata,
     description="""
     This is our API service
-    We can writhe here something like links or so...
+    We can write here something like links or so...
     """,
 )
 
